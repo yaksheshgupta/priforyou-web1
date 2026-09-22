@@ -1,0 +1,123 @@
+.main {
+  min-height: 100vh;
+  background: #09090b;
+  padding: 64px 24px 80px;
+  position: relative;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+
+.inner {
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-family: system-ui, sans-serif;
+  color: #555;
+  text-decoration: none;
+  margin-bottom: 40px;
+  transition: color 0.15s;
+}
+
+.back:hover {
+  color: #a78bfa;
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.label {
+  font-size: 12px;
+  font-family: system-ui, sans-serif;
+  color: #a78bfa;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 800;
+  font-family: system-ui, sans-serif;
+  color: #f4f4f5;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-family: system-ui, sans-serif;
+  color: #52525b;
+  line-height: 1.6;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 28px;
+  background: #111113;
+  border: 1px solid #1f1f23;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s, transform 0.15s;
+}
+
+.card:hover {
+  border-color: #3f3f46;
+  background: #18181b;
+  transform: translateY(-1px);
+}
+
+.cardLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: system-ui, sans-serif;
+  color: #e4e4e7;
+}
+
+.cardMeta {
+  font-size: 12px;
+  font-family: system-ui, sans-serif;
+  color: #52525b;
+}
+
+.arrow {
+  color: #3f3f46;
+  font-size: 18px;
+  transition: color 0.15s, transform 0.15s;
+}
+
+.card:hover .arrow {
+  color: #a78bfa;
+  transform: translateX(3px);
+}

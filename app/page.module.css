@@ -139,6 +139,28 @@
   box-shadow: 0 8px 32px rgba(131, 58, 180, 0.45);
 }
 
+.communityBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 30px;
+  background: rgba(167, 139, 250, 0.1);
+  color: #a78bfa;
+  border-radius: 999px;
+  font-family: system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
+}
+
+.communityBtn:hover {
+  background: rgba(167, 139, 250, 0.18);
+  border-color: rgba(167, 139, 250, 0.45);
+  transform: translateY(-1px);
+}
+
 .resourcesBtn {
   display: inline-flex;
   align-items: center;

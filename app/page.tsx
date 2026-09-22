@@ -28,6 +28,14 @@ export default function Home() {
             </svg>
             Follow on Instagram
           </a>
+          <a
+            href="https://www.instagram.com/channel/AbY8sqpzHbQdepbq/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.communityBtn}
+          >
+            Join the Community
+          </a>
           <a href="/post/insta" className={styles.resourcesBtn}>
             Browse Resources →
           </a>
